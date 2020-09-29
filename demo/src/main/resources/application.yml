@@ -1,0 +1,16 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+  liquibase:
+    enabled: true
+  security:
+    oauth2:
+      client:
+        registration:
+          authProvider:
+            authorization-grant-type: client_credentials
+            client-id: clientId
+            client-secret: clientSecre
+        provider:
+          authProvider:
+            token-uri: tokenUri
